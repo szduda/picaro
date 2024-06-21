@@ -1,0 +1,44 @@
+{% args current_speed %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Picobot </title>
+    <link href="../static/css/custom.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<div class="acceleration-slider">
+    <input
+        type="range"
+        class="range-slider"
+        step="1"
+        value="0"
+        min="-100"
+        max="100"
+        id="accelerationInput"
+    />
+</div>
+<div class="lr-slider">
+    <input
+        type="range"
+        class="range-slider"
+        step="1"
+        value="0"
+        min="-100"
+        max="100"
+        id="lrInput"
+    />
+</div>
+<div class="set blue" style="rotate: 90deg; margin: 80px 0;">
+    <div>
+        <nav class="d-pad">
+            <a class="right control" data-direction="right"></a>
+            <a class="left control" data-direction="left"></a>
+        </nav>
+    </div>
+</div>
+<script src="../static/js/custom.js"></script>
+</body>
+</html>
